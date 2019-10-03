@@ -13,16 +13,16 @@ resource "aws_vpc" "project" {
   }
 }
 
-# private subnet #1
-resource "aws_subnet" "private_app_1" {
-  cidr_block        = "10.20.0.0/24"
-  vpc_id            = "${aws_vpc.project.id}"
-  availability_zone = "us-east-2a"
-  tags = {
-    Name       = "Private Subnet"
-    Visibility = "Private"
-  }
-}
+# # private subnet #1
+# resource "aws_subnet" "private_app_1" {
+#   cidr_block        = "10.20.0.0/24"
+#   vpc_id            = "${aws_vpc.project.id}"
+#   availability_zone = "us-east-2a"
+#   tags = {
+#     Name       = "Private Subnet"
+#     Visibility = "Private"
+#   }
+# }
 
 # # public subnet #1 for NAT gw
 # resource "aws_subnet" "public_nat_1" {
