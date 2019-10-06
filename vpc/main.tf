@@ -2,6 +2,7 @@ provider "aws" {
   # region     = "us-east-2"
   # access_key = "AKIAXQAG5RWJ3RAX4DLO"
   # secret_key = "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"
+  profile = "bebit-ds"
 }
 
 resource "aws_vpc" "project" {
