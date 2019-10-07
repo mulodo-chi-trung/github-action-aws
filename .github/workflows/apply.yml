@@ -2,9 +2,9 @@ on:
   push:
     branches:
       - master
-name: Apply
+name: ds-vpc
 jobs:
-  apply-work-flow:
+  execution-plan:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
