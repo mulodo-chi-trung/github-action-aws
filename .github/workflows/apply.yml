@@ -2,7 +2,7 @@ on:
   push:
     branches:
       - master
-name: ds-vpc
+name: ds-vpc Execution Plan
 jobs:
   execution-plan:
     runs-on: ubuntu-latest

@@ -1,5 +1,5 @@
 on: pull_request
-name: ds-vpc
+name: ds-vpc Check Pull Request
 jobs:
   check-pull-request:
     runs-on: ubuntu-latest
