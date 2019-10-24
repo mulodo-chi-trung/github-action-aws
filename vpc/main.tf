@@ -36,3 +36,15 @@ resource "aws_subnet" "public_nat_1" {
     Visibility = "Public"
   }
 }
+
+# public subnet #1 for NAT gw
+resource "aws_subnet" "public_nat_3" {
+  cidr_block        = "10.20.2.1/24"
+  vpc_id            = "${aws_vpc.project.id}"
+  availability_zone = "us-east-2a"
+
+  tags = {
+    Name       = "Public Subnet"
+    Visibility = "Public"
+  }
+}
